@@ -520,3 +520,17 @@ body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;ba
 /* tono cálido para unificar fotos de distintas fuentes */
 .ph.has-img img{filter:saturate(.9) contrast(1.03) sepia(.08)}
 .hero-video__media .ph.has-img img{filter:saturate(.85) brightness(.85)}
+
+/* === Secciones en rojo (FAQ de contacto) === */
+.section--red{background:var(--lime);color:var(--paper)}
+.section--red .kicker{color:var(--paper)}
+.section--red .kicker::before{background:var(--paper)}
+.section--red .section__head p{color:var(--paper);opacity:.85}
+.section--red .faq details{border-color:var(--ink);box-shadow:6px 6px 0 var(--ink);color:var(--ink)}
+.section--red .faq details[open] summary{background:var(--ink);color:var(--paper)}
+.section--red .faq details[open] summary::after{color:var(--lime)}
+
+/* === Fotos del hero de páginas internas 50% más grandes === */
+.phero .sticker{width:clamp(225px,25.5vw,330px);top:14%}
+.phero--long h1{font-size:clamp(56px,10.5vw,158px)}
+.ph.has-img img{color:transparent;font-size:0}
